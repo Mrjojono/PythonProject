@@ -1,0 +1,125 @@
+{% extends 'mapping/globa_base.html' %}
+{% block content %}
+    <div class="circle">
+        {% load static %}
+        <div class="earth"
+             style="background-image: url('{% static 'mapping/assest_globe/New-global-view.max-1000x1000.jpeg' %}');">
+        </div>
+        <div class="content">
+            <div class="continents">
+                <div class="continent one">
+                    <a id="n-a" href="#north-america">North America</a>
+                </div>
+                <div class="continent two">
+                    <a id="s-a" href="#south-america">south America</a>
+                </div>
+                <div class="continent three">
+                    <a id="eur" href="#europe">Europe</a>
+                </div>
+                <div class="continent four">
+                    <a id="afr" href="#africa">Africa</a>
+                </div>
+                <div class="continent five">
+                    <a id="asi" href="#asia">Asia</a>
+                </div>
+                <div class="continent six">
+                    <a id="aus" href="#australia">Australia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="north-america" class="about">
+        <h1>North America</h1>
+        <img src={% static 'mapping/assest_globe/marten-bjork-V5jxkMKxv_0-unsplash.jpg' %} alt="image_no_found">
+        <p>
+            North America, third largest of the world’s continents, lying for the most part between the Arctic Circle
+            and the Tropic of Cancer. It extends for more than 5,000 miles (8,000 km) to within 500 miles (800 km) of
+            both the North Pole and the Equator and
+            has an east-west extent of 5,000 miles. It covers an area of 9,355,000 square miles (24,230,000 square
+            km).North America occupies the northern portion of the landmass generally referred to as the New World, the
+            Western Hemisphere, or simply
+            the Americas. Mainland North America is shaped roughly like a triangle, with its base in the north and its
+            apex in the south; associated with the continent is Greenland, the largest island in the world, and such
+            offshore groups as the Arctic
+            Archipelago, the West Indies, Haida Gwaii (formerly the Queen Charlotte Islands), and the Aleutian Islands.
+        </p>
+    </div>
+    <div id="south-america" class="about">
+        <h1>South America</h1>
+        <img src={% static 'mapping/assest_globe/sam-andreatta-30Dm5nnL9Zk-unsplash.jpg' %} alt="image_no_found">
+        <p>
+            South America, fourth largest of the world’s continents. It is the southern portion of the landmass
+            generally referred to as the New World, the Western Hemisphere, or simply the Americas. The continent is
+            compact and roughly triangular in shape, being
+            broad in the north and tapering to a point—Cape Horn, Chile—in the south.South America is bounded by the
+            Caribbean Sea to the northwest and north, the Atlantic Ocean to the northeast, east, and southeast, and the
+            Pacific Ocean to the west.
+            In the northwest it is joined to North America by the Isthmus of Panama, a land bridge narrowing to about 50
+            miles (80 km) at one point. Drake Passage, south of Cape Horn, separates South America from Antarctica.
+        </p>
+    </div>
+    <div id="europe" class="about">
+        <h1>Europe</h1>
+        <img src={% static 'mapping/assest_globe/marten-bjork-V5jxkMKxv_0-unsplash.jpg' %} alt="image_no_found">
+        <p>
+            Europe, second smallest of the world’s continents, composed of the westward-projecting peninsulas of Eurasia
+            (the great landmass that it shares with Asia) and occupying nearly one-fifteenth of the world’s total land
+            area. It is bordered on the north by
+            the Arctic Ocean, on the west by the Atlantic Ocean, and on the south (west to east) by the Mediterranean
+            Sea, the Black Sea, the Kuma-Manych Depression, and the Caspian Sea. The continent’s eastern boundary (north
+            to south) runs along the
+            Ural Mountains and then roughly southwest along the Emba (Zhem) River, terminating at the northern Caspian
+            coast.
+        </p>
+    </div>
+    <div id="africa" class="about">
+        <h1>Africa</h1>
+        <img src={% static 'mapping/assest_globe/marten-bjork-V5jxkMKxv_0-unsplash.jpg' %} alt="image_no_found">
+        <p>
+            Africa, the second largest continent (after Asia), covering about one-fifth of the total land surface of
+            Earth. The continent is bounded on the west by the Atlantic Ocean, on the north by the Mediterranean Sea, on
+            the east by the Red Sea and the Indian
+            Ocean, and on the south by the mingling waters of the Atlantic and Indian oceans.Africa’s total land area is
+            approximately 11,724,000 square miles (30,365,000 square km), and the continent measures about 5,000 miles
+            (8,000 km) from north to
+            south and about 4,600 miles (7,400 km) from east to west. Its northern extremity is Al-Ghīrān Point, near
+            Al-Abyaḍ Point (Cape Blanc), Tunisia; its southern extremity is Cape Agulhas, South Africa; its farthest
+            point east is Xaafuun (Hafun)
+            Point, near Cape Gwardafuy (Guardafui), Somalia; and its western extremity is Almadi Point (Pointe des
+            Almadies), on Cape Verde (Cap Vert), Senegal. In the northeast, Africa was joined to Asia by the Sinai
+            Peninsula until the construction
+            of the Suez Canal. Paradoxically, the coastline of Africa—18,950 miles (30,500 km) in length—is shorter than
+            that of Europe, because there are few inlets and few large bays or gulfs.
+        </p>
+    </div>
+    <div id="asia" class="about">
+        <h1>Asia</h1>
+        <img src={% static 'mapping/assest_globe/marten-bjork-V5jxkMKxv_0-unsplash.jpg' %} alt="image_no_found">
+        <p>
+            Asia, the world’s largest and most diverse continent. It occupies the eastern four-fifths of the giant
+            Eurasian landmass. Asia is more a geographic term than a homogeneous continent, and the use of the term to
+            describe such a vast area always carries
+            the potential of obscuring the enormous diversity among the regions it encompasses. Asia has both the
+            highest and the lowest points on the surface of Earth, has the longest coastline of any continent, is
+            subject overall to the world’s widest
+            climatic extremes, and, consequently, produces the most varied forms of vegetation and animal life on Earth.
+            In addition, the peoples of Asia have established the broadest variety of human adaptation found on any of
+            the continents.
+        </p>
+    </div>
+    <div id="australia" class="about">
+        <h1>Australia</h1>
+        <img src={% static 'mapping/assest_globe/marten-bjork-V5jxkMKxv_0-unsplash.jpg' %} alt="image_no_found">
+        <p>
+            At about 3 million square miles (7.7 million square km), Australia is the smallest continent on Earth. In
+            fact, it’s closer in size to Greenland than it is to South America. Does that make Australia an island like
+            Greenland? Although Australia is sometimes
+            called an “island continent,” most geographers consider islands and continents to be separate things.
+            According to Britannica, an island is a mass of land that is both “entirely surrounded by water” and also
+            “smaller than a continent.” By
+            that definition, Australia can’t be an island because it’s already a continent.
+        </p>
+    </div>
+
+
+{% endblock %}

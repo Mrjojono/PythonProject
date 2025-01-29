@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1ebc07e-b537-48e9-a6f7-9acd5b679403" name="Changes" comment="Sort payment lists by date in descending order.&#10;&#10;Added `.order_by('-date_paiement')` to ensure both invalid and general payment lists display the most recent payments first. This improves the clarity and usability of the payment views.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProjectexposer/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProjectexposer/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/_Wallpaper_One_piece.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/jujutsu_kaisen_hd_png_by_newjer53_dekiqwv-350t-2x.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mrjojono&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Darrylwin/DjangoExposer.git",
+    "accountId": "c5013a15-cf51-469b-a401-2baa54e8a91b"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/DjangoProjectexposer/models.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/DjangoProjectexposer/settings.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/paiement/views.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rIF3ZeFrDqMhc5asd4pDaQLerc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.DjangoProjectexposer.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "paiement",
+    "last_opened_file_path": "C:/Users/logos/Desktop/PythonPorject/static",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\logos\Desktop\PythonPorject\static" />
+      <recent name="C:\Users\logos\Desktop\PythonPorject\paiement" />
+      <recent name="C:\Users\logos\Desktop\PythonPorject\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joan\PycharmProjects\DjangoProjectexposer\static" />
+      <recent name="C:\Users\joan\PycharmProjects\DjangoProjectexposer\media\images" />
+      <recent name="C:\Users\joan\PycharmProjects\DjangoProjectexposer\static\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DjangoProjectexposer" type="Python.DjangoServer" factoryName="Django server">
+      <module name="DjangoProjectexposer" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="DjangoProjectexposer.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
+        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1ebc07e-b537-48e9-a6f7-9acd5b679403" name="Changes" comment="" />
+      <created>1736238484207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736238484207</updated>
+      <workItem from="1736238485874" duration="1435000" />
+      <workItem from="1736407030210" duration="8060000" />
+      <workItem from="1736423753558" duration="17853000" />
+      <workItem from="1736501278232" duration="13589000" />
+      <workItem from="1736540723932" duration="5260000" />
+      <workItem from="1736590117280" duration="4403000" />
+      <workItem from="1736613796927" duration="13615000" />
+      <workItem from="1736636631262" duration="7984000" />
+      <workItem from="1736689583944" duration="1496000" />
+      <workItem from="1736697302016" duration="5032000" />
+      <workItem from="1736703886061" duration="28805000" />
+      <workItem from="1736764484150" duration="4960000" />
+      <workItem from="1736781818111" duration="30219000" />
+      <workItem from="1736886811165" duration="5277000" />
+      <workItem from="1736921714509" duration="3855000" />
+      <workItem from="1736933796752" duration="4565000" />
+      <workItem from="1736952332414" duration="1244000" />
+      <workItem from="1736964233021" duration="38511000" />
+    </task>
+    <task id="LOCAL-00001" summary="Remove unused files and update configuration.&#10;&#10;Deleted unnecessary media files, initial migration script, and outdated IDE configuration files. Updated database settings with a password and made minor formatting improvements in models.py. These changes enhance project cleanup and improve maintainability.">
+      <option name="closed" value="true" />
+      <created>1736953415802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736953415802</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Delete outdated data source files and update image paths.&#10;&#10;Removed obsolete database data source files to clean up the project. Updated the structure by renaming `assest_globe` image files and moving them to the `mapping` directory for better organization. These changes improve project maintainability and clarify file usage.">
+      <option name="closed" value="true" />
+      <created>1736964781411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736964781411</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update collation mappings in data source configuration&#10;&#10;Revised collation names and default charset settings in the XML to reflect updated configurations. Adjustments ensure accurate collation name usage and proper charset defaults for various encodings.">
+      <option name="closed" value="true" />
+      <created>1736966264700</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736966264700</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add payment feature with templates and dynamic updates&#10;&#10;Implemented functionalities for managing payments, including views, templates, scripts, and styles. Updated navigation for new payment routes and integrated the feature with existing client and merchandise data.">
+      <option name="closed" value="true" />
+      <created>1736970434627</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736970434627</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add new models and configs for migrations and images  &#10;&#10;Introduced `Marchandise` and `Paiement` models via a new Django migration file to support additional functionalities. Added new image files and an XML configuration likely for IDE data sources. These changes prepare the project for further feature expansion and collaboration setup.">
+      <option name="closed" value="true" />
+      <created>1736975705986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736975705986</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Remove unused styles and refine payment list template.&#10;&#10;Eliminated redundant inline styles and adjusted the loop rendering for `marchandises` to access `nom`. These changes improve template clarity, maintainability, and adherence to best practices.">
+      <option name="closed" value="true" />
+      <created>1736976049292</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736976049292</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update payment handling and navigation links&#10;&#10;Replaced `textContent` with `innerText` for compatibility and updated hidden input management in payment scripts. Adjusted templates to dynamically link navigation to Django's URL resolver, improving maintainability. Introduced a new payment list template with enhanced styles for better user experience.">
+      <option name="closed" value="true" />
+      <created>1736978205039</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736978205039</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactor payment templates to use a base structure.&#10;&#10;Updated `li_payements.html` to extend a new `base_liste_paiements.html` template for better reusability and maintainability. Integrated Bootstrap and external resources for enhanced styling and functionality, replacing outdated static assets.">
+      <option name="closed" value="true" />
+      <created>1736983229283</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736983229283</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactor payment template rendering for improved structure&#10;&#10;Modified `li_payements.html` to render individual payment cards inside the loop instead of using a table structure. This enhances readability, maintainability, and aligns the UI with modern styling practices. Simplified template logic, improving clarity and reducing redundant code.">
+      <option name="closed" value="true" />
+      <created>1736983485551</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736983485551</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Refactor payment template for improved structure.&#10;&#10;Updated `li_payements.html` to include centered, styled messages when no clients are found and improved rendering for better readability and maintainability. Simplified template logic to align with modern UI practices and reduce redundancy.">
+      <option name="closed" value="true" />
+      <created>1736983681749</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736983681749</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Clean up commented-out code in payment template.&#10;&#10;Removed extensive obsolete commented code from the payment template file. This improves readability and maintains a cleaner codebase without impacting functionality.">
+      <option name="closed" value="true" />
+      <created>1736983713847</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736983713847</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Clean up commented-out code in payment template.&#10;&#10;Removed extensive obsolete commented code from the payment template file. This improves readability and maintains a cleaner codebase without impacting functionality.">
+      <option name="closed" value="true" />
+      <created>1736985865676</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1736985865677</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix spacing issue in payment template invalid message&#10;&#10;Adjusted unnecessary whitespace in the payment template message for invalid payments. This change improves the template's formatting without altering content or functionality. Also includes minor updates to IDE workspace configuration.">
+      <option name="closed" value="true" />
+      <created>1736986223539</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736986223539</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Standardize labels and improve UI formatting.&#10;&#10;Updated labels from &quot;Enregistrement&quot; to &quot;Enregistrer client&quot; for consistency across templates. Enhanced UI styles by modifying container margin-top and border-radius values. Minor whitespace and formatting adjustments were made for cleaner HTML and CSS code.">
+      <option name="closed" value="true" />
+      <created>1736987096479</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736987096479</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update README with project details and setup instructions.&#10;&#10;Added comprehensive project information, including features, technologies used, installation steps, and usage instructions. This enhances documentation clarity and provides a complete guide for users to interact with the project effectively.">
+      <option name="closed" value="true" />
+      <created>1736988023410</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736988023410</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add success banner and update currency to GBP&#10;&#10;Added a success message banner that disappears after 7 seconds upon payment completion. Updated displayed currency from FCFA to GBP across the template for consistency.">
+      <option name="closed" value="true" />
+      <created>1737010367490</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1737010367490</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Reduce success message display duration and add banner flag&#10;&#10;Adjusted the success message timeout from 7 seconds to 3 seconds for improved user experience. Added a `show_banner` flag in the context to control banner visibility for better flexibility in rendering.">
+      <option name="closed" value="true" />
+      <created>1737010449005</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1737010449005</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add success banner and update currency to GBP&#10;&#10;Implemented a success message banner that dismisses after 7 seconds following successful payments. Changed the displayed currency from FCFA to GBP across templates for consistency. These updates enhance user feedback and align currency with project requirements.">
+      <option name="closed" value="true" />
+      <created>1737010464353</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1737010464353</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add .gitignore">
+      <option name="closed" value="true" />
+      <created>1737025945258</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737025945258</updated>
+    </task>
+    <task id="LOCAL-00020" summary="modify project urls">
+      <option name="closed" value="true" />
+      <created>1737025974029</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1737025974029</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add methodto render page to delete a paiement">
+      <option name="closed" value="true" />
+      <created>1737026019069</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1737026019069</updated>
+    </task>
+    <task id="LOCAL-00022" summary="projet files">
+      <option name="closed" value="true" />
+      <created>1737026545562</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1737026545562</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add required textfields">
+      <option name="closed" value="true" />
+      <created>1737026587158</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1737026587158</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Formulaire pour la suppression">
+      <option name="closed" value="true" />
+      <created>1737026618810</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1737026618810</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Formulaire pour la suppression">
+      <option name="closed" value="true" />
+      <created>1737026629755</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1737026629755</updated>
+    </task>
+    <task id="LOCAL-00026" summary="workspace file">
+      <option name="closed" value="true" />
+      <created>1737026643184</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1737026643184</updated>
+    </task>
+    <task id="LOCAL-00027" summary="workspace file">
+      <option name="closed" value="true" />
+      <created>1737027034652</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1737027034652</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Sort payment lists by date in descending order.&#10;&#10;Added `.order_by('-date_paiement')` to ensure both invalid and general payment lists display the most recent payments first. This improves the clarity and usability of the payment views.">
+      <option name="closed" value="true" />
+      <created>1737030899039</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1737030899039</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update collation mappings in data source configuration&#10;&#10;Revised collation names and default charset settings in the XML to reflect updated configurations. Adjustments ensure accurate collation name usage and proper charset defaults for various encodings." />
+    <MESSAGE value="Add payment feature with templates and dynamic updates&#10;&#10;Implemented functionalities for managing payments, including views, templates, scripts, and styles. Updated navigation for new payment routes and integrated the feature with existing client and merchandise data." />
+    <MESSAGE value="Add new models and configs for migrations and images  &#10;&#10;Introduced `Marchandise` and `Paiement` models via a new Django migration file to support additional functionalities. Added new image files and an XML configuration likely for IDE data sources. These changes prepare the project for further feature expansion and collaboration setup." />
+    <MESSAGE value="Remove unused styles and refine payment list template.&#10;&#10;Eliminated redundant inline styles and adjusted the loop rendering for `marchandises` to access `nom`. These changes improve template clarity, maintainability, and adherence to best practices." />
+    <MESSAGE value="Update payment handling and navigation links&#10;&#10;Replaced `textContent` with `innerText` for compatibility and updated hidden input management in payment scripts. Adjusted templates to dynamically link navigation to Django's URL resolver, improving maintainability. Introduced a new payment list template with enhanced styles for better user experience." />
+    <MESSAGE value="Refactor payment templates to use a base structure.&#10;&#10;Updated `li_payements.html` to extend a new `base_liste_paiements.html` template for better reusability and maintainability. Integrated Bootstrap and external resources for enhanced styling and functionality, replacing outdated static assets." />
+    <MESSAGE value="Refactor payment template rendering for improved structure&#10;&#10;Modified `li_payements.html` to render individual payment cards inside the loop instead of using a table structure. This enhances readability, maintainability, and aligns the UI with modern styling practices. Simplified template logic, improving clarity and reducing redundant code." />
+    <MESSAGE value="Refactor payment template for improved structure.&#10;&#10;Updated `li_payements.html` to include centered, styled messages when no clients are found and improved rendering for better readability and maintainability. Simplified template logic to align with modern UI practices and reduce redundancy." />
+    <MESSAGE value="Clean up commented-out code in payment template.&#10;&#10;Removed extensive obsolete commented code from the payment template file. This improves readability and maintains a cleaner codebase without impacting functionality." />
+    <MESSAGE value="Fix minor formatting in invalid payments template&#10;&#10;Removed unnecessary spaces in the HTML structure of the invalid payments template, ensuring consistency and cleaner code formatting. No functional changes were made. Updated IDE workspace configuration to reflect task changes for improved tracking." />
+    <MESSAGE value="Fix spacing issue in payment template invalid message&#10;&#10;Adjusted unnecessary whitespace in the payment template message for invalid payments. This change improves the template's formatting without altering content or functionality. Also includes minor updates to IDE workspace configuration." />
+    <MESSAGE value="Standardize labels and improve UI formatting.&#10;&#10;Updated labels from &quot;Enregistrement&quot; to &quot;Enregistrer client&quot; for consistency across templates. Enhanced UI styles by modifying container margin-top and border-radius values. Minor whitespace and formatting adjustments were made for cleaner HTML and CSS code." />
+    <MESSAGE value="Update README with project details and setup instructions.&#10;&#10;Added comprehensive project information, including features, technologies used, installation steps, and usage instructions. This enhances documentation clarity and provides a complete guide for users to interact with the project effectively." />
+    <MESSAGE value="Add success banner and update currency to GBP&#10;&#10;Added a success message banner that disappears after 7 seconds upon payment completion. Updated displayed currency from FCFA to GBP across the template for consistency." />
+    <MESSAGE value="Reduce success message display duration and add banner flag&#10;&#10;Adjusted the success message timeout from 7 seconds to 3 seconds for improved user experience. Added a `show_banner` flag in the context to control banner visibility for better flexibility in rendering." />
+    <MESSAGE value="Add success banner and update currency to GBP&#10;&#10;Implemented a success message banner that auto-hides after 7 seconds upon payment completion. Updated the displayed currency from FCFA to GBP across templates for consistency and improved user experience." />
+    <MESSAGE value="Add success banner and update currency to GBP&#10;&#10;Implemented a success message banner that dismisses after 7 seconds following successful payments. Changed the displayed currency from FCFA to GBP across templates for consistency. These updates enhance user feedback and align currency with project requirements." />
+    <MESSAGE value="add .gitignore" />
+    <MESSAGE value="modify project urls" />
+    <MESSAGE value="add methodto render page to delete a paiement" />
+    <MESSAGE value="projet files" />
+    <MESSAGE value="add required textfields" />
+    <MESSAGE value="Formulaire pour la suppression" />
+    <MESSAGE value="workspace file" />
+    <MESSAGE value="Sort payment lists by date in descending order.&#10;&#10;Added `.order_by('-date_paiement')` to ensure both invalid and general payment lists display the most recent payments first. This improves the clarity and usability of the payment views." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sort payment lists by date in descending order.&#10;&#10;Added `.order_by('-date_paiement')` to ensure both invalid and general payment lists display the most recent payments first. This improves the clarity and usability of the payment views." />
+  </component>
+</project>

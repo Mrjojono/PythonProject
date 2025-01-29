@@ -1,0 +1,48 @@
+{% extends 'mapping/base-2.html' %}
+
+{% block content %}
+    <div class="container mt-5 ">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <h2 class="text-center mb-4"> Enregistrer client</h2>
+                            <h2 class="text-center mb-4"></h2> <label>
+                            Nom:</label>
+                            <div class="form-group">
+                                <input type="text" id="nom" name="nom" placeholder="Nom" class="form-control" required/>
+
+                            </div>
+                            <label>
+                                Prenom
+                            </label>
+                            <div class="form-group mt-3">
+                                <input type="text" id="prenom" name="prenom" placeholder="Prénom" class="form-control"
+                                       required/>
+                            </div>
+                            <label>
+                                Image
+                            </label>
+                            <div class="form-group mt-3">
+                                <input type="file" id="img" name="img" placeholder="Adresse"
+                                       class="form-control"/>
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <input type="email" id="email" name="email" placeholder="email"
+                                       class="form-control" required/>
+                            </div>
+                            <div class=" mt-4 d-flex justify-content-between">
+                                <button class="btn btn-primary" type="submit">Valider
+                                </button>
+                                <button class="btn btn-danger" type="reset" name="reset">Annuler</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

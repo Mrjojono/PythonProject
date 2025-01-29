@@ -1,0 +1,26 @@
+.carte {
+    border-radius: 10px;
+    height: auto; /* Hauteur fixée */
+    width: 100%;
+}
+
+#map {
+    height: 100%; /* La carte remplit entièrement son parent */
+    width: 100%; /* Largeur correspondante à celle du parent */
+    border: 2px solid #e6e0e0;
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #8358f5, #262691);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

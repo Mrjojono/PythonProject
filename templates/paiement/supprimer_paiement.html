@@ -1,0 +1,41 @@
+{% extends 'mapping/base.html' %}
+
+{% block content %}
+    <div class="container-fluid d-flex flex-column bg-body-secondary flex-lg-row mt-5 mb-5 gap-4 h-auto"
+         style="max-width: 1370px;  overflow-x: scroll; ">
+        <div class="border-2 border-black col-12 col-lg-3 p-3">
+            {# Partie concernant les infos sur le client #}
+            <form class="form-group d-flex flex-column gap-3" method="POST">
+                {% csrf_token %}
+                {#                <div class="form-control d-flex justify-content-center align-items-center"#}
+                {#                     style="height: 200px; width: 200px; border-radius: 50%; overflow: hidden; margin-left: 20%">#}
+                {#                    {% load static %}#}
+                {#                    <img src="{{ details.img_client.url }}" alt="image indispensable" class="card-img img-fluid"#}
+                {#                         width="300px" style="height: 100%; width: 100%; border-radius: 50%; object-fit: cover;">#}
+                {#                </div>#}
+                {##}
+                {#                <input class="form-control mt-2" id="nom" type="text" readonly value={{ details.nom }}>#}
+                {#                <input class="form-control" type="text" id="prenom" readonly value={{ details.prenom }}>#}
+                {##}
+                {#                {% for adresses in details %}#}
+                {#                    <input class="form-control" readonly#}
+                {#                           value="{{ adresses.num_rue }}, {{ adresses.nom_rue }} {{ adresses.city }} {{ adresses.state }} {{ adresses.state }}">#}
+                {#                    <label class="form-label"><span class="text-body-emphasis"></span>#}
+                {#                        <input class="form-control mt-2" id="longitude" type="text"#}
+                {#                               value="{{ adresses.longitude }}">#}
+                {#                        <input class="form-control mt-3" id="latitude" type="text" value="{{ adresses.latitude }}">#}
+                {#                    </label>#}
+                {#                {% endfor %}#}
+                {#                {% for detail in details %}#}
+                <p>Voulez vous Annuler ce paiement ?</p>
+                {#                {% endfor %}#}
+
+                <div class="d-flex flex-row justify-content-between">
+                    <button type="button" class="btn btn-primary">Cancel</button>
+                    <button type="submit" class="btn btn-danger" name="supprimer">Delete</button>
+                </div>
+            </form>
+        </div>
+        <br/>
+    </div>
+{% endblock %}

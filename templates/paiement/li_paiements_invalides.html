@@ -1,0 +1,61 @@
+{% extends 'paiement/base_liste_paiements.html' %}
+
+{% block content %}
+    <div class=" container card text-center mt-5">
+        <h1>Listes des paiements Invalides</h1>
+    </div>
+    <div class="card container mt-3 mb-5 flex-1"
+         style="background: #080126; box-shadow: 10px 10px 10px rgba(34,36,38,0.7)">
+        <table class="container table mt-5">
+            <thead>
+            <tr>
+                <th scope="col">Client</th>
+                <th scope="col">Montant</th>
+                <th scope="col">Date paiement</th>
+                <th scope="col">Marchandise</th>
+                <th scope="col">Statut</th>
+                <th scope="col"></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for paiement in invalid_paiements %}
+                <tr class="table-active">
+                    <td>
+                        <a href="/client/{{ paiement.client.id_client }}" class="btn btn-link text-decoration-none">
+                            {{ paiement.client.nom }} {{ paiement.client.prenom }}
+                        </a>
+                    </td>
+                    <td>{{ paiement.montant_total }}</td>
+                    <td>{{ paiement.date_paiement }}</td>
+                    <td>
+                        <ul>
+                            {% for marchandise in paiement.marchandises %}
+                                <li>{{ marchandise.nom }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    <td>
+                        <i class="fas fa-times-circle text-danger" title="Statut invalide"></i>
+                    </td>
+                    <td>
+                        <!-- Formulaire pour la suppression -->
+                        <form action="/paiement/delete/{{ paiement.numero_paiement }}/" method="post"
+                              style="display: inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger" name="delete"><i
+                                    class='fas fa-trash-alt'></i> Annuler le paiement
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="5"><p style="text-align: center; color: black; font-size: 1.5rem; margin-top: 2rem;">
+                        Aucun paiement invalide trouvé.</p></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

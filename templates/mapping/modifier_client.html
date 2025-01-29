@@ -1,0 +1,41 @@
+{% extends 'mapping/base.html' %}
+
+{% block content %}
+    <div class="container-fluid d-flex flex-column bg-body-secondary flex-lg-row mt-5 mb-5 gap-4 h-auto"
+         style="max-width: 1370px;  overflow-x: scroll; ">
+        <div class="border-2 border-black col-12 col-lg-3 p-3">
+            {# Partie concernant les infos sur le client #}
+            <form class="form-group d-flex flex-column gap-3" method="POST">
+                {% csrf_token %}
+                <div class="form-control d-flex justify-content-center align-items-center"
+                     style="height: 200px; width: 200px; border-radius: 50%; overflow: hidden; margin-left: 20%">
+                    {% load static %}
+                    <img src="{{ details.img_client.url }}" alt="image indispensable" class="card-img img-fluid"
+                         width="300px" style="height: 100%; width: 100%; border-radius: 50%; object-fit: cover;">
+                </div>
+
+                <input class="form-control mt-2" id="nom" type="text" name="nom" value={{ details.nom }}>
+                <input class="form-control" type="text" id="prenom" name="prenom" value={{ details.prenom }}>
+                <input class="form-control" type="text" id="email" name="email" value={{ details.email }}>
+
+                {% for adresses in details.adresse.all %}
+                    <input class="form-control" readonly
+                           value="{{ adresses.num_rue }}, {{ adresses.nom_rue }} {{ adresses.city }} {{ adresses.state }} {{ adresses.state }}">
+                    <label class="form-label"><span class="text-body-emphasis"></span>
+                        <input class="form-control mt-2" id="longitude" type="text" name="longitude"
+                               value="{{ adresses.longitude }}">
+                        <input class="form-control mt-3" id="latitude" name="latitude" type="text"
+                               value="{{ adresses.latitude }}">
+                    </label>
+                {% endfor %}
+                <div class="d-flex flex-row justify-content-lg-center">
+                    <button type="submit" class="btn btn-primary" name="modifier">Update</button>
+                </div>
+            </form>
+        </div>
+        <div class="carte col-12 col-lg-9   ">
+            <div id="map"></div>
+        </div>
+        <br/>
+    </div>
+{% endblock %}

@@ -1,0 +1,109 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-mt-5 {
+    margin-top: 50px;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+
+button[type="submit"].btn-primary {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+}
+
+button[type="submit"].btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+button[type="reset"].btn-danger {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: #fff;
+}
+
+button[type="reset"].btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+
+.invalid-feedback {
+    color: red;
+    font-size: 14px;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+input.form-control:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+
+input.form-control {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+input.form-control:focus {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+input.form-control:valid {
+    opacity: 1;
+    transform: translateY(0);
+}
+

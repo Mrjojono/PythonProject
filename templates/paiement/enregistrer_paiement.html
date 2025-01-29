@@ -1,0 +1,94 @@
+{% extends 'paiement/base_enregistrer.html' %}
+
+{% block content %}
+    <div class="container container-mt-5">
+        {% if show_banner %}
+            <div class="alert alert-success" role="alert" id="paiement-success-message">
+                {{ success_message }}
+            </div>
+            <script>
+                setTimeout(() => {
+                    const message = document.getElementById('paiement-success-message');
+                    if (message) message.style.display = 'none';
+                }, 3000);
+            </script>
+        {% endif %}
+        <h1>Enregistrer un Paiement</h1>
+        <form method="post" action="{% url 'enregistrer_paiement' %}">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="client" class="form-label">Client:</label>
+                <select id="client" name="client" class="form-select" required>
+                    {% for client in clients %}
+                        <option value="{{ client.id_client }}">{{ client.nom }} {{ client.prenom }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="marchandises" class="form-label">Marchandises:</label>
+                <div id="marchandises-list">
+                    {% for marchandise in marchandises %}
+                        <div class="form-check">
+                            <input name="marchandise" class="form-check-input" type="checkbox"
+                                   value="{{ marchandise.numero_marchandise }}"
+                                   data-prix="{{ marchandise.prix }}" onchange="updateMontantTotal()">
+                            <label class="form-check-label" for="{{ marchandise.numero_marchandise }}">
+                                &nbsp; {{ marchandise.nom }} - {{ marchandise.prix }} £
+                            </label>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-number" class="form-label"><i class="fa-solid fa-credit-card"></i> Numéro de
+                    carte</label>
+                <input type="text" id="card-number" name="card-number" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="expiry" class="form-label"><i class="fa-solid fa-calendar-days"></i> Expiration
+                    (MM/AA)</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/AA" class="form-control" required/>
+            </div>
+
+            <div class="mb-3">
+                <label for="cvv" class="form-label"><i class="fa-solid fa-lock"></i> CVV</label>
+                <input type="text" id="cvv" name="cvv" class="form-control" required/>
+            </div>
+
+            <div class="mb-3">
+                <label for="montant_total" class="form-label">Montant total:</label>
+                <span id="montant_total">0.00</span> £
+            </div>
+
+            <input type="hidden" id="hidden_montant_total" name="montant_total" value="0.00">
+
+            <script>
+                function updateHiddenInput() {
+                    const montantSpan = document.getElementById('montant_total');
+                    const hiddenInput = document.getElementById('hidden_montant_total');
+                    hiddenInput.value = montantSpan.textContent;
+                }
+
+                // Call updateHiddenInput whenever the total amount is updated
+                function updateMontantTotal() {
+                    let total = 0;
+
+                    const checkboxes = document.querySelectorAll('#marchandises-list .form-check-input:checked');
+                    checkboxes.forEach(checkbox => {
+                        total += parseFloat(checkbox.getAttribute('data-prix') || 0);
+                    });
+
+                    const montantSpan = document.getElementById('montant_total');
+                    montantSpan.textContent = total.toFixed(2);
+
+                    updateHiddenInput();
+                }
+            </script>
+
+            <button type="submit" class="btn btn-primary" onclick="showPaymentMessage()"> PAYER</button>
+        </form>
+    </div>
+{% endblock %}

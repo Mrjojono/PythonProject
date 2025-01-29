@@ -1,0 +1,69 @@
+{% extends 'mapping/base.html' %}
+
+{% block content %}
+    <div class=" container card text-center mt-5">
+        <h1>Listes des clients</h1>
+    </div>
+    {% if per %}
+        <div class="card container mt-3 mb-5 flex-1"
+             style="background: #080126; box-shadow: 10px 10px 10px rgba(34,36,38,0.7)">
+            <a class="container mt-5 card btn btn-primary text-decoration-none" href="/form/"><b>Ajouter Clients</b></a>
+            <table class="container table mt-5">
+                <thead>
+                <tr>
+                    <th scope="col">id_client</th>
+                    <th scope="col">nom</th>
+                    <th scope="col">prenom</th>
+                    <th scope="col">Adresse</th>
+                    <th scope="col">Actions</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for cl in per %}
+                    <tr class="table-active">
+                        <th scope="row">{{ cl.id_client }}</th>
+                        <td>
+                            <a href="/client/{{ cl.id_client }}" class="btn btn-link text-decoration-none">
+                                {{ cl.nom }}
+                            </a>
+                        </td>
+                        <td>{{ cl.prenom }}</td>
+                        <td>
+                            {% if cl.adresses %}
+                                {% for address in cl.adresses %}
+                                    <div>
+                                        {{ address.num_rue }} {{ address.nom_rue }}, {{ address.city }}, {{ address.state }}
+                                    </div>
+                                {% endfor %}
+                            {% else %}
+                                <div>Aucune adresse disponible</div>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <!-- Formulaire pour la suppression -->
+                            <form action="/client/delete/{{ cl.id_client }}/" method="post" style="display: inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger" name="delete"><i
+                                        class='fas fa-trash-alt'></i> Supprimer
+                                </button>
+                            </form>
+                        </td>
+                        <td>
+                            <!-- Formulaire pour la suppression -->
+                            <form method="post" style="display: inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-primary">
+                                    <a href="/client/modifier/{{ cl.id_client }}" class=" text-decoration-none "
+                                       style="color: white"> <i class='fas fa-edit'></i> Modifier</a></button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p>Aucun client trouvé.</p>
+    {% endif %}
+{% endblock %}

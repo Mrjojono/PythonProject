@@ -1,0 +1,10 @@
+{% extends "mapping/base-2.html" %}
+
+{% block content %}
+    <h2 class="mt-5">Create a New User</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign Up</button>
+    </form>
+{% endblock %}

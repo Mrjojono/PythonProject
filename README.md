@@ -30,7 +30,7 @@ a comprehensive example for learning and experimentation.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Darrylwin/DjangoExposer.git
+   git clone https://github.com/Mrjojono/PythonProject.git
    ```
 2. Navigate to the project directory:
    ```bash
